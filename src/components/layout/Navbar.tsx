@@ -50,13 +50,13 @@ export default function App() {
 
         {/* Links for larger screens */}
         <div className="hidden sm:flex justify-center items-center space-x-4">
-          <button className="w-[120px] sm:w-[156px] border rounded-md border-white m-3 font-bold hover:bg-accent">
+          <button className="w-[120px] sm:w-[156px] h-[2.5rem] border rounded-md border-white m-3 font-bold hover:bg-accent">
             <Link href="/custom-clothing" className="text-sm text-black">
               Custom Clothing
             </Link>
           </button>
           <CustomNavigationMenu />
-          <button className="w-[120px] sm:w-[156px] border rounded-md border-white m-3 font-bold hover:bg-accent">
+          <button className="w-[120px] sm:w-[156px] h-[2.5rem] border rounded-md border-white m-3 font-bold hover:bg-accent">
             <Link href="/faq" className="text-sm text-black">
               FAQ
             </Link>
