@@ -13,6 +13,7 @@ import React, { useState } from "react";
 import { Link, Input } from "@nextui-org/react";
 import { useSession } from "../form/auth-wrapper";
 import { ShoppingCartIcon } from "lucide-react";
+import { SearchOutlined } from "@ant-design/icons";
 
 export default function App() {
   const session = useSession();
@@ -65,15 +66,15 @@ export default function App() {
         {/* Right-side icons */}
         <div className="flex justify-end items-center space-x-4 w-[20rem]">
           {!searchIsOpen && (
-            <button className="px-3" onClick={() => setSearchIsOpen(true)}>
-              <SearchIcon className="h-6 w-6 font-bold text-black" />
+            <button className="" onClick={() => setSearchIsOpen(true)}>
+              <SearchOutlined className="pt-1" style={{ fontSize: '24px' }}/> 
             </button>
           )}
           {searchIsOpen && (
             <Input
-              className="px-3"
+              className="px-3 focus:ring focus:ring-white"
               classNames={{
-                base: "max-w-full sm:max-w-[300px] h-10", // Change max-w to desired width
+                base: "max-w-full sm:max-w-[300px] h-8", // Change max-w to desired width
                 mainWrapper: "h-full",
                 input: "text-small",
                 inputWrapper:

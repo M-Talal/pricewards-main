@@ -80,3 +80,38 @@
     @apply bg-background text-foreground;
   }
 }
+.container {
+  position: relative;
+  width: 220px;
+
+  .search-input {
+    font-size: 14px;
+    width: 200px;
+    max-width: 0;
+    padding: 5px;
+    transition: all 0.5s ease;
+    position: absolute;
+    left: 30px;
+    box-sizing: border-box;
+    opacity: 0;
+    outline: none;
+    border: none;
+  }
+
+  .search-expanded {
+    max-width: 200px;
+    opacity: 1;
+  }
+
+  .search-wrapper {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 4px;
+   font-size: 18px;
+  }
+}
