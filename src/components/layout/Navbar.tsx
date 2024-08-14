@@ -89,9 +89,9 @@ export default function App() {
             />
           )}
 
-          <Link href="/cart" className="px-3 text-black">
+          { session && <Link href="/cart" className="px-3 text-black">
             <ShoppingCartIcon className="h-6 w-6 text-black-500" />
-          </Link>
+          </Link>}
           {!session && (
             <button
               onClick={() => {
